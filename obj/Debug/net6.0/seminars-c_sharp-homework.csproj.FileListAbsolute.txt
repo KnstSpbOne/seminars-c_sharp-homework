@@ -1,0 +1,5 @@
+E:\GeekBrains\c#\seminars-c_sharp-homework\obj\Debug\net6.0\seminars-c_sharp-homework.csproj.AssemblyReference.cache
+E:\GeekBrains\c#\seminars-c_sharp-homework\obj\Debug\net6.0\seminars-c_sharp-homework.GeneratedMSBuildEditorConfig.editorconfig
+E:\GeekBrains\c#\seminars-c_sharp-homework\obj\Debug\net6.0\seminars-c_sharp-homework.AssemblyInfoInputs.cache
+E:\GeekBrains\c#\seminars-c_sharp-homework\obj\Debug\net6.0\seminars-c_sharp-homework.AssemblyInfo.cs
+E:\GeekBrains\c#\seminars-c_sharp-homework\obj\Debug\net6.0\seminars-c_sharp-homework.csproj.CoreCompileInputs.cache
