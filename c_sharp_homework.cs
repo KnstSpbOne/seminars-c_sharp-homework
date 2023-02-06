@@ -1,0 +1,4 @@
+static public void main
+{
+    
+}
