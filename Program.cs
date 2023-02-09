@@ -1,29 +1,26 @@
-﻿void Task4()
+﻿void Task2()
 {
-    System.Console.WriteLine("Задача 2: на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.");
-    System.Console.WriteLine("Введите 1-е число");
-    int n1=Convert.toInt32(System.Console.ReadLine());
-    System.Console.WriteLine("Введите 2-е число");
-    int n2=Convert.toInt32(System.Console.ReadLine());
+    Console.WriteLine("Задача 2: на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.");
+    Console.WriteLine("Введите 1-е число");
+    int n1=Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Введите 2-е число");
+    int n2=Convert.ToInt32(Console.ReadLine());
     if (n1>n2)
     {
-        System.Console.Writeline("Первое число больше второго и равно :" {n1});
+        Console.WriteLine("Первое число больше второго и равно: {0}", n1);
     }
     else if (n1<n2)
     {
-        System.Console.Writeline("Второе число больше первого и равно :" {n2});
+        Console.WriteLine("Второе число больше первого и равно {0}:", n2);
     }
     else
     {
-        System.Console.Writeline("Числа равны:" {n1});
+        Console.WriteLine("Числа равны: {0}", n1);
     }
 }  
-internal class Program
-{
-    private static void Main(string[] args)
-    {
-        System.Console.WriteLine("Какую задачу будем решать? Введите номер:");
-        System.Console.WriteLine("Задача 2: на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.");
+
+Console.WriteLine("Какую задачу будем решать? Введите номер:");
+Console.WriteLine("Задача 2: на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.");
         // System.Console.WriteLine("Задача 4: принимает на вход три числа и выдаёт максимальное из этих чисел.");
         // System.Console.WriteLine("Задача 6: на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка)");
         // System.Console.WriteLine("Задача 8: на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.");
@@ -33,21 +30,20 @@ internal class Program
         // System.Console.WriteLine("Задача 19:принимает на вход пятизначное число и проверяет, является ли оно палиндромом.");
         // System.Console.WriteLine("Задача 21:принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.");
         // System.Console.WriteLine("Задача 23:принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.");
-        int TaskNumber=Convert.ToInt32(System.Console.ReadLine());
-        switch (TaskNumber)
-        {
-            case 2:
-                Task2();
-            break;
-            case 4
-                Task4();
-            case6
-            case 6:
-                Task6();
-            break;
-            case 8:
-                Task8();
-            break;
+int TaskNumber=Convert.ToInt32(Console.ReadLine());
+switch (TaskNumber)
+{
+    case 2:
+        Task2();
+    break;
+            // case 4;
+            //     Task4();
+            // case 6:
+            //     Task6();
+            // break;
+            // case 8:
+            //     Task8();
+            // break;
             // case 10:
             //     Task10();
             // break;
@@ -66,10 +62,7 @@ internal class Program
             // case 23:
             //     Task23();
             // break;
-            default:
-            System.Console.WriteLine("Не хочешь решать-до свидания!!");
-            break;
-        }   
-
-    }
+    default:
+        Console.WriteLine("Не хочешь решать-до свидания!!");
+    break;
 }

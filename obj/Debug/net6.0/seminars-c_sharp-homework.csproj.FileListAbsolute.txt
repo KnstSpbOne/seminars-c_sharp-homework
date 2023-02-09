@@ -3,3 +3,13 @@ E:\GeekBrains\c#\seminars-c_sharp-homework\obj\Debug\net6.0\seminars-c_sharp-hom
 E:\GeekBrains\c#\seminars-c_sharp-homework\obj\Debug\net6.0\seminars-c_sharp-homework.AssemblyInfoInputs.cache
 E:\GeekBrains\c#\seminars-c_sharp-homework\obj\Debug\net6.0\seminars-c_sharp-homework.AssemblyInfo.cs
 E:\GeekBrains\c#\seminars-c_sharp-homework\obj\Debug\net6.0\seminars-c_sharp-homework.csproj.CoreCompileInputs.cache
+E:\GeekBrains\c#\seminars-c_sharp-homework\bin\Debug\net6.0\seminars-c_sharp-homework.exe
+E:\GeekBrains\c#\seminars-c_sharp-homework\bin\Debug\net6.0\seminars-c_sharp-homework.deps.json
+E:\GeekBrains\c#\seminars-c_sharp-homework\bin\Debug\net6.0\seminars-c_sharp-homework.runtimeconfig.json
+E:\GeekBrains\c#\seminars-c_sharp-homework\bin\Debug\net6.0\seminars-c_sharp-homework.dll
+E:\GeekBrains\c#\seminars-c_sharp-homework\bin\Debug\net6.0\seminars-c_sharp-homework.pdb
+E:\GeekBrains\c#\seminars-c_sharp-homework\obj\Debug\net6.0\seminars-c_sharp-homework.dll
+E:\GeekBrains\c#\seminars-c_sharp-homework\obj\Debug\net6.0\refint\seminars-c_sharp-homework.dll
+E:\GeekBrains\c#\seminars-c_sharp-homework\obj\Debug\net6.0\seminars-c_sharp-homework.pdb
+E:\GeekBrains\c#\seminars-c_sharp-homework\obj\Debug\net6.0\seminars-c_sharp-homework.genruntimeconfig.cache
+E:\GeekBrains\c#\seminars-c_sharp-homework\obj\Debug\net6.0\ref\seminars-c_sharp-homework.dll
