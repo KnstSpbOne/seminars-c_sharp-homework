@@ -86,16 +86,17 @@ void Task13()
 void Task15()
 {
     Console.WriteLine("Задача 15:принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.");
+    Console.Write("Введите число :   ");
     int DayNumber=Convert.ToInt32(Console.ReadLine());
     while ((DayNumber>7)|(DayNumber<=0))
     {
         Console.Write("Нет такого номера дня недели. Еще раз :  ");
         DayNumber=Convert.ToInt32(Console.ReadLine());
     }
-    if ((DayNumber<>6)&(DayNumber<>7))
-        Console.WriteLine("Это будний день");
-    else
+    if ((DayNumber==6)|(DayNumber==7))
         Console.WriteLine("Это Выходной!!");
+    else
+        Console.WriteLine("Это будний день");
 }
 // ------------MAIN--------------------
 // Console.WriteLine("Задача 2: на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.");
