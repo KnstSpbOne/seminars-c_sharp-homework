@@ -58,6 +58,7 @@
 //         Console.Write("  {0}  ", counter);
 //     }
 // }
+
 void Task10()
 {
     Console.WriteLine("Задача 10:принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.");
@@ -70,15 +71,51 @@ void Task10()
     }
     Console.WriteLine("Вторая цифра числа : {0}", (N%100-N%10)/10);
 }
+
 void Task13()
 {
-  Console.WriteLine("Задача 13:выводит третью цифру заданного числа или сообщает, что третьей цифры нет.");
-  Console.Write("Введите число :   ");
-  int N=Convert.ToInt32(Console.ReadLine());
-  if (N/100<1)
-    Console.WriteLine("число {0} не содержит третьей цифры", N);
-  else
-    Console.WriteLine("Третья справа    цифра числа {0} это {1}", N, (N%1000-N%100)/100);
+    Console.WriteLine("Задача 13:выводит третью цифру заданного числа или сообщает, что третьей цифры нет.");
+    Console.Write("Введите число :   ");
+    int N=Convert.ToInt32(Console.ReadLine());
+    if (N/100<1)
+        Console.WriteLine("число {0} не содержит третьей цифры", N);
+    else
+        Console.WriteLine("Третья справа цифра числа {0} это {1}", N, (N%1000-N%100)/100);
+}
+
+void Task15()
+{
+    Console.WriteLine("Задача 15:принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.");
+    int DayNumber=Convert.ToInt32(Console.ReadLine());
+    while ((DayNumber>7)|(DayNumber<=0))
+    {
+        Console.Write("Нет такого номера дня недели. Еще раз :  ");
+        DayNumber=Convert.ToInt32(Console.WriteLine());
+    }
+    switch (DayNumber)
+    {
+        case 1;
+            Console.WriteLine("Это понедельник");
+        break;
+        case 2;
+            Console.WriteLine("Это вторник");
+        break;
+        case 3;
+            Console.WriteLine("Это среда");
+        break;
+        case 4;
+            Console.WriteLine("Это четверг");
+        break;
+        case 5;
+            Console.WriteLine("Это пятница");
+        break;
+        case 6;
+            Console.WriteLine("Это суббота");
+        break;
+        case 7;
+            Console.WriteLine("Это воскресенье");
+        break;
+    }
 }
 // ------------MAIN--------------------
 // Console.WriteLine("Задача 2: на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.");
@@ -126,9 +163,9 @@ switch (TaskNumber)
     case 13:
         Task13();
     break;
-            // case 15:
-            //     Task15();
-            // break;
+    case 15:
+        Task15();
+    break;
             // case 19:
             //     Task19();
             // break;
