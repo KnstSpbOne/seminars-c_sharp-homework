@@ -90,32 +90,12 @@ void Task15()
     while ((DayNumber>7)|(DayNumber<=0))
     {
         Console.Write("Нет такого номера дня недели. Еще раз :  ");
-        DayNumber=Convert.ToInt32(Console.WriteLine());
+        DayNumber=Convert.ToInt32(Console.ReadLine());
     }
-    switch (DayNumber)
-    {
-        case 1;
-            Console.WriteLine("Это понедельник");
-        break;
-        case 2;
-            Console.WriteLine("Это вторник");
-        break;
-        case 3;
-            Console.WriteLine("Это среда");
-        break;
-        case 4;
-            Console.WriteLine("Это четверг");
-        break;
-        case 5;
-            Console.WriteLine("Это пятница");
-        break;
-        case 6;
-            Console.WriteLine("Это суббота");
-        break;
-        case 7;
-            Console.WriteLine("Это воскресенье");
-        break;
-    }
+    if ((DayNumber<>6)&(DayNumber<>7))
+        Console.WriteLine("Это будний день");
+    else
+        Console.WriteLine("Это Выходной!!");
 }
 // ------------MAIN--------------------
 // Console.WriteLine("Задача 2: на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.");
