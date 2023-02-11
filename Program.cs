@@ -125,13 +125,14 @@ void Task21()
 {
     double[] GetXYZ() // ввод координат 
     {
-        double[] XYZ=new double[3]
+        double[] XYZ=new double[3];
         Console.Write("Введите значение x-");
         XYZ[0]=Convert.ToDouble(Console.ReadLine());
         Console.Write("Введите значение y-");
         XYZ[1]=Convert.ToDouble(Console.ReadLine());
         Console.Write("Введите значение z-");
-        XYZ[2]=Convert.ToDouble(Console.ReadLine());      
+        XYZ[2]=Convert.ToDouble(Console.ReadLine());
+        return XYZ;     
     }
     Console.WriteLine("Задача 21:принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.");
     Console.WriteLine("Введите координаты 1-й точки");
@@ -141,6 +142,26 @@ void Task21()
     double Distance=Math.Sqrt(Math.Pow((Dot2[0]-Dot1[0]),2)+Math.Pow((Dot2[1]-Dot1[1]),2)+Math.Pow((Dot2[2]-Dot1[2]),2));
     Console.WriteLine("Расстояние между точками: {0}", Distance);
 }
+void Task23()
+{
+    Console.WriteLine("Задача 23:принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.");
+    // не очень понятно в чем прикол этой задачи и почему она всплыла аж на 3 семинаре,
+    // возможно я упустил какие-то доп. ограничения в условиях реализации
+    Console.Write(" Введите число : ");
+    int N=Convert.ToInt32(Console.ReadLine());
+    while (N<1)
+    {
+        Console.Write("Введите число побольше:  ");
+        N=Convert.ToInt32(Console.ReadLine());
+    }
+    Console.WriteLine("Кубы чисел от 1 до {0}", N);
+    if (N==1)
+        Console.WriteLine("1");
+    for (int cntr=1;cntr<N;cntr++)
+    {
+        Console.Write("  {0}", Math.Pow(Convert.ToDouble(cntr),3));
+    }
+}
 {// ------------MAIN--------------------
     // первый семинар
     // Console.WriteLine("Семинар №1 ДЗ: задача 2, задача 4, задача 6, задача 8");
@@ -148,7 +169,6 @@ void Task21()
     // Console.WriteLine("Cеминар №2 ДЗ: задача 10,задача 13,задача 15");
     // третий семинар
     Console.WriteLine("Семинар №3 ДЗ: задача 19, задача 21, задача 23");
-            // System.Console.WriteLine("Задача 23:принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.");
             //Задача 25: Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
             //Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
             //Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
@@ -193,9 +213,9 @@ void Task21()
         case 21:
             Task21();
         break;
-                // case 23:
-                //     Task23();
-                // break;
+        case 23:
+            Task23();
+        break;
         default:
             Console.WriteLine("Не хочешь решать-до свидания!!");
         break;
