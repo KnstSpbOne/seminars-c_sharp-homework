@@ -43,7 +43,6 @@
 //    else
 //         Console.WriteLine("Число {0} нечетное", n);
 // }
-
 // void Task8()
 // {
 //     Console.WriteLine("Задача 8: на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.");
@@ -58,7 +57,6 @@
 //         Console.Write("  {0}  ", counter);
 //     }
 // }
-
 // void Task10()
 // {
 //     Console.WriteLine("Задача 10:принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.");
@@ -71,7 +69,6 @@
 //     }
 //     Console.WriteLine("Вторая цифра числа : {0}", (N%100-N%10)/10);
 // }
-
 // void Task13()
 // {
 //     Console.WriteLine("Задача 13:выводит третью цифру заданного числа или сообщает, что третьей цифры нет.");
@@ -82,7 +79,6 @@
 //     else
 //         Console.WriteLine("Третья справа цифра числа {0} это {1}", N, (N%1000-N%100)/100);
 // }
-
 // void Task15()
 // {
 //     Console.WriteLine("Задача 15:принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.");
@@ -101,11 +97,11 @@
 // третий семинар
 void Task19()
 {
-    Console.WriteLine("Задача 19:принимает на вход пятизначное число и проверяет, является ли оно палиндромом.");
+    Console.WriteLine("Задача 19:принимает на вход число и проверяет, является ли оно палиндромом.");
     Console.Write("Введите число (а можно и не число):   ");
     string? UserInput=Console.ReadLine();
     bool Marker=false;
-    while ((UserInput.Length<2))
+    while ((UserInput!.Length<2))
     {
         Console.Write("Слишком короткое.Еще раз:  ");
         UserInput=Console.ReadLine();
@@ -113,39 +109,45 @@ void Task19()
     for (int cntr=0; cntr<UserInput.Length/2; cntr++)
     {
         if (UserInput[cntr]==UserInput[UserInput.Length-cntr-1])
-        {
             Marker=true;
-        }
         else
         {
-            Console.Write(UserInput[cntr]);
-            Console.WriteLine(UserInput[UserInput.Length-cntr-1]);
             Marker=false;
             cntr=UserInput.Length;
-        }        
+        }
     }     
     if (Marker==false)
-    {
         Console.WriteLine("Это не палиндром");
-    }
     else
+        Console.WriteLine("Это палиндром");               
+}
+void Task21()
+{
+    double[] GetXYZ() // ввод координат 
     {
-        Console.WriteLine("Это палиндром");
+        double[] XYZ=new double[3]
+        Console.Write("Введите значение x-");
+        XYZ[0]=Convert.ToDouble(Console.ReadLine());
+        Console.Write("Введите значение y-");
+        XYZ[1]=Convert.ToDouble(Console.ReadLine());
+        Console.Write("Введите значение z-");
+        XYZ[2]=Convert.ToDouble(Console.ReadLine());      
     }
+    Console.WriteLine("Задача 21:принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.");
+    Console.WriteLine("Введите координаты 1-й точки");
+    double[] Dot1=GetXYZ();
+    Console.WriteLine("Введите координаты 2-й точки");
+    double[] Dot2=GetXYZ();
+    double Distance=Math.Sqrt(Math.Pow((Dot2[0]-Dot1[0]),2)+Math.Pow((Dot2[1]-Dot1[1]),2)+Math.Pow((Dot2[2]-Dot1[2]),2));
+    Console.WriteLine("Расстояние между точками: {0}", Distance);
 }
 {// ------------MAIN--------------------
     // первый семинар
-    // Console.WriteLine("Задача 2: на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.");
-    // Console.WriteLine("Задача 4: принимает на вход три числа и выдаёт максимальное из этих чисел.");
-    // Console.WriteLine("Задача 6: на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка)");
-    // Console.WriteLine("Задача 8: на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.");
+    // Console.WriteLine("Семинар №1 ДЗ: задача 2, задача 4, задача 6, задача 8");
     // второй семинар
-    // Console.WriteLine("Задача 10:принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.");
-    // Console.WriteLine("Задача 13:выводит третью цифру заданного числа или сообщает, что третьей цифры нет.");
-    // Console.WriteLine("Задача 15:принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.");
+    // Console.WriteLine("Cеминар №2 ДЗ: задача 10,задача 13,задача 15");
     // третий семинар
-    Console.WriteLine("Задача 19");
-            // System.Console.WriteLine("Задача 21:принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.");
+    Console.WriteLine("Семинар №3 ДЗ: задача 19, задача 21, задача 23");
             // System.Console.WriteLine("Задача 23:принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.");
             //Задача 25: Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
             //Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
@@ -188,9 +190,9 @@ void Task19()
         case 19:        // третий семинар
             Task19();
         break;
-                // case 21:
-                //     Task21();
-                // break;
+        case 21:
+            Task21();
+        break;
                 // case 23:
                 //     Task23();
                 // break;
